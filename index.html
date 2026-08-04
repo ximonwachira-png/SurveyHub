@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyHub - Earn by Sharing Your Opinion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070') no-repeat center/cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Dark overlay to make text readable */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            margin-top: 25vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        .success-msg {
+            background: rgba(37, 211, 102, 0.9);
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .btn {
+            padding: 16px 45px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        footer {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #25D366;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .btn { padding: 14px 35px; font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>Welcome to SurveyHub</h1>
+        <div class="success-msg">Background photo success ✅</div>
+        <br>
+        <a href="register.html" class="btn">Get Started</a>
+    </div>
+
+    <footer>
+        Contact: <a href="mailto:surveyhub@gmail.com">surveyhub@gmail.com</a>
+    </footer>
+
+</body>
+</html>
