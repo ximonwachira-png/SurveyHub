@@ -1,0 +1,35 @@
+/* public/css/style.css - colorful, responsive styles */
+:root{
+  --bg1:#ff7eb3;
+  --bg2:#65d6ff;
+  --card:#ffffffee;
+  --accent:#6b46ff;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+body{background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#111;}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.site-header{padding:16px 0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;margin:0;color:#fff}
+nav a{margin-left:12px;text-decoration:none}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:#fff;color:#111;text-decoration:none;font-weight:600}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.2);color:#fff}
+.btn-cta{background:var(--accent);color:#fff;box-shadow:0 8px 30px rgba(107,70,255,0.18)}
+.btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.2)}
+.hero{display:flex;align-items:center;justify-content:center;padding:80px 0}
+.hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));padding:40px;border-radius:14px;box-shadow:0 10px 40px rgba(16,24,40,0.12);text-align:center}
+.hero-card h2{margin-top:0}
+.site-footer{padding:20px 0;text-align:center;color:rgba(255,255,255,0.9)}
+
+/* Auth pages */
+.auth-page{display:flex;align-items:center;justify-content:center;min-height:calc(100vh - 160px);padding:20px}
+.auth-card{width:100%;max-width:420px;background:var(--card);padding:28px;border-radius:12px;box-shadow:0 8px 30px rgba(16,24,40,0.12)}
+.auth-card h1{margin-top:0}
+.auth-card label{display:block;margin-bottom:12px;font-size:14px;color:var(--muted)}
+.auth-card input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid #e6e6f0;margin-top:6px;font-size:15px}
+.auth-card .muted{color:var(--muted);font-size:14px}
+#message{min-height:18px;margin:8px 0;color:#b00020}
+
+@media (max-width:600px){.container{padding:16px}.hero{padding:40px 0}}
