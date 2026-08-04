@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  surveyhub:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    volumes:
+      - ./server/surveyhub.db:/app/server/surveyhub.db
+    restart: unless-stopped
