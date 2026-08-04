@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyHub Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h2>📊 SurveyHub</h2>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://ui-avatars.com/api/?name=Guest&background=fff&color=667eea&size=128" alt="Guest">
+            <h4>Guest User</h4>
+            <p>Join to unlock all features</p>
+            <a href="register.html" class="signup-btn">Sign Up Free</a>
+        </div>
+
+        <div class="menu-items">
+            <div class="menu-section">Main</div>
+            <a href="index.html"><span class="icon">🏠</span> Home</a>
+            <a href="register.html"><span class="icon">📝</span> Register</a>
+            <a href="login.html"><span class="icon">🔑</span> Login</a>
+
+            <div class="menu-section">Surveys</div>
+            <a href="#"><span class="icon">📋</span> Available Surveys <span class="badge">SOON</span></a>
+            <a href="#"><span class="icon">💰</span> My Earnings</a>
+            <a href="#"><span class="icon">💳</span> Withdraw</a>
+            <a href="#"><span class="icon">📊</span> Statistics</a>
+
+            <div class="menu-section">More</div>
+            <a href="#"><span class="icon">🎁</span> Rewards</a>
+            <a href="#"><span class="icon">👥</span> Refer & Earn <span class="badge">NEW</span></a>
+            <a href="#"><span class="icon">⚙️</span> Settings</a>
+            <a href="#"><span class="icon">❓</span> Help & Support</a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="welcome">
+            <h1>🚀 Welcome to SurveyHub</h1>
+            <p>No accounts created yet. Be the FIRST to start earning!</p>
+        </div>
+
+        <div class="stats">
+            <div class="card">
+                <h3>Total Users</h3>
+                <div class="value">0</div>
+            </div>
+            <div class="card">
+                <h3>Total Paid Out</h3>
+                <div class="value">Ksh 0</div>
+            </div>
+            <div class="card">
+                <h3>Available Surveys</h3>
+                <div class="value">0</div>
+                <div class="refresh-info">Refreshes every 3 hours</div>
+            </div>
+        </div>
+
+        <div class="card" style="text-align:center;">
+            <h3>Ready to Start?</h3>
+            <p style="color:#555; margin:15px 0;">Create an account to access surveys and start earning money</p>
+            <a href="register.html" class="btn-register">Create Your Account</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+            document.getElementById('overlay').classList.toggle('active');
+            document.getElementById('hamburger').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
